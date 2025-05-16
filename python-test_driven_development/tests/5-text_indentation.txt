@@ -1,0 +1,11 @@
+>>> text_indentation("Hello. How are you? I hope you're good: Take care.")
+Hello.
+
+ How are you?
+
+ I hope you're good:
+
+ Take care.
+>>> text_indentation(98)
+Traceback (most recent call last):
+TypeError: text must be a string
