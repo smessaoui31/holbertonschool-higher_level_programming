@@ -23,11 +23,11 @@ python3 -m doctest ./tests/*
 
 | Module                  | Doctest File                 |
 |-------------------------|------------------------------|
-| `add_integer.py`        | `tests/0-add_integer.txt`     |
-| `matrix_divided.py`     | `tests/2-matrix_divided.txt`  |
-| `say_my_name.py`        | `tests/3-say_my_name.txt`     |
-| `print_square.py`       | `tests/4-print_square.txt`    |
-| `text_indentation.py`   | `tests/5-text_indentation.txt`|
+| `0-add_integer.py`        | `tests/0-add_integer.txt`     |
+| `2-matrix_divided.py`     | `tests/2-matrix_divided.txt`  |
+| `3-say_my_name.py`        | `tests/3-say_my_name.txt`     |
+| `4-print_square.py`       | `tests/4-print_square.txt`    |
+| `5-text_indentation.py`   | `tests/5-text_indentation.txt`|
 
 ---
 
@@ -105,11 +105,11 @@ print(mod.add_integer.__doc__)
 
 | File                     | Purpose                           |
 |--------------------------|------------------------------------|
-| `add_integer.py`         | Adds two integers with validation |
-| `matrix_divided.py`      | Divides all elements of a matrix  |
-| `say_my_name.py`         | Prints a full name                |
-| `print_square.py`        | Prints a square using `#`         |
-| `text_indentation.py`    | Adds line breaks after punctuation|
+| `0-add_integer.py`         | Adds two integers with validation |
+| `2-matrix_divided.py`      | Divides all elements of a matrix  |
+| `3-say_my_name.py`         | Prints a full name                |
+| `4-print_square.py`        | Prints a square using `#`         |
+| `5-text_indentation.py`    | Adds line breaks after punctuation|
 | `6-max_integer.py`       | Returns the max integer in a list |
 | `tests/*.txt`            | `doctest` test files              |
 | `tests/6-max_integer_test.py` | `unittest` test class for `max_integer` |
