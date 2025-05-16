@@ -1,5 +1,4 @@
 def add_tuple(tuple_a=(), tuple_b=()):
-    # Make sure both tuples have at least 2 elements, filling with 0s if needed
     a1 = tuple_a[0] if len(tuple_a) > 0 else 0
     a2 = tuple_a[1] if len(tuple_a) > 1 else 0
 
