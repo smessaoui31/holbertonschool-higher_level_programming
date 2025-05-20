@@ -4,7 +4,14 @@ This module defines a class Square.
 
 It creates square objects with a private size attribute.
 """
+
+
 class Square:
+    """
+    This class represents a square.
+
+    It stores the size of the square as a private attribute.
+    """
     def __init__(self, size=0):
         """
         Initialize a new Square instance.
@@ -19,4 +26,10 @@ class Square:
         self.__size = size
 
     def area(self):
+        """
+        Calculate and return the area of the square.
+
+        Returns:
+            int: The square of the size.
+        """
         return self.__size ** 2

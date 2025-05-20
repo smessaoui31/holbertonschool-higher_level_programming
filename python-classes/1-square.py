@@ -7,6 +7,11 @@ It creates square objects with a private size attribute.
 
 
 class Square:
+    """
+    This class represents a square.
+
+    It stores the size of the square as a private attribute.
+    """
     def __init__(self, size):
         """
         Initialize a new Square instance.
