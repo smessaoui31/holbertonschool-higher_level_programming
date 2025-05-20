@@ -74,7 +74,7 @@ class Square:
             value (tuple): A tuple of 2 positive integers.
 
         Raises:
-            TypeError: If value is not a valid tuple of 2 non-negative integers.
+            TypeError: If value is not a valid tuple of 2 non-negative int.
         """
         if (not isinstance(value, tuple) or len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or
