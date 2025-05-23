@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Defines a class Rectangle with width, height,
-area perimeter, str, and repr."""
+"""Defines a class Rectangle with proper string representation."""
 
 
 class Rectangle:
@@ -45,7 +44,5 @@ class Rectangle:
     def __str__(self):
         if self.width == 0 or self.height == 0:
             return ""
-        return "\n".join("#" * self.width for _ in range(self.height))
-
-    def __repr__(self):
-        return f"Rectangle({self.width}, {self.height})"
+        rectangle_rows = ["#" * self.width for _ in range(self.height)]
+        return "\n".join(rectangle_rows)
