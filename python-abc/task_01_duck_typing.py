@@ -4,7 +4,7 @@ Defines abstract Shape class and concrete Circle and Rectangle classes.
 """
 
 from abc import ABC, abstractmethod
-import math
+from math import pi
 
 
 class Shape(ABC):
