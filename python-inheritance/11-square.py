@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Defines a Square class with custom string representation.
+"""
+
+
 class BaseGeometry:
     """Base class for geometry-related operations."""
 

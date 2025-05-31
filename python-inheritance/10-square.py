@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+"""
+Defines a Square class that inherits from Rectangle.
+"""
+
+
 class BaseGeometry:
     """Base class for geometry-related operations."""
 

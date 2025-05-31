@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Defines a Rectangle class inheriting from
+BaseGeometry with validated dimensions.
+"""
+
+
 class BaseGeometry:
     """Base class for geometry-related operations."""
 

@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""
+Defines a Rectangle class that includes
+area computation and string formatting.
+"""
+
+
 class BaseGeometry:
     """Base class for geometry-related operations."""
 
