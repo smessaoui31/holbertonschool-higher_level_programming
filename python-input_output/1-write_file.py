@@ -3,6 +3,7 @@
 This module handles reading from and writing to UTF-8 text files.
 """
 
+
 def write_file(filename="", text=""):
     """
 Write a string to a UTF-8 text file and returns
