@@ -1,5 +1,7 @@
 #!/usr/bin/python3
-
+"""
+This module handles reading from and writing to UTF-8 text files.
+"""
 
 def write_file(filename="", text=""):
     """
