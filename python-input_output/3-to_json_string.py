@@ -7,6 +7,6 @@ import json
 
 def to_json_string(my_obj):
     """
-    Convert JSON string to Python object.
+    Returns the JSON string representation of an object.
     """
     return json.loads(my_obj)
