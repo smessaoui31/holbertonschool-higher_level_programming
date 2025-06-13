@@ -30,24 +30,10 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-
-            payload = {"status": "OK"}
-            response = json.dumps(payload,
-                                  separators=(',', ':')).encode('utf-8')
-            self.wfile.write(response)
-
-        elif self.path == "/info":
-            self.send_response(200)
-            self.send_header("Content-type", "application/json")
-            self.end_headers()
-            status = {
-                "version": "1.0",
-                "description": "A simple API built with http.server"
-                }
-            self.wfile.write(json.dumps(status).encode('utf-8'))
+            message = "OK"
 
         else:
-            self.send_response(404)  # For The 404 NOT FOUND
+            self.send_response(404, message="Not Found")
             self.send_header("Content-type", "text/plain")
             self.end_headers()
             self.wfile.write(b"Endpoint not found")
