@@ -1,11 +1,17 @@
 #!/usr/bin/python3
+"""
+All module containing class for my first server
+"""
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
 
 # gestionnaire de requêtes HTTP
 
 
-class SimpleAPIHandler(BaseHTTPRequestHandler):
+class MyServer(BaseHTTPRequestHandler):
+    """
+    Class to define my first server
+    """
 
     def do_GET(self):
         if self.path == "/":
@@ -36,13 +42,15 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self.send_response(404, message="Not Found")
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write(b"Endpoint not found")
+            message = "Endpoint not found"
+
+        self.wfile.write(bytes(message, "utf8"))
 
 
 # Launch the server on the port 8000
 def run():
     server_address = ('', 8000)
-    httpd = HTTPServer(server_address, SimpleAPIHandler)
+    httpd = HTTPServer(server_address, MyServer)
     print("Server running on http://localhost:8000")
     httpd.serve_forever()
 
