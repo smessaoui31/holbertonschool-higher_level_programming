@@ -30,7 +30,10 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
-            status = {"status": "OK"}
+            status = {
+                "version": "1.0",
+                "description": "A simple API built with http.server"
+                }
             self.wfile.write(json.dumps(status).encode('utf-8'))
 
         else:
