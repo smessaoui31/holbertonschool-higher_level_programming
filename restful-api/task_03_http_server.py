@@ -26,7 +26,7 @@ class SimpleAPIHandler(BaseHTTPRequestHandler):
             # Transformer le dictionnaire en texte JSON
             self.wfile.write(json.dumps(data).encode('utf-8'))
 
-        elif self.path == "/status":
+        elif self.path == "/info":
             self.send_response(200)
             self.send_header("Content-type", "application/json")
             self.end_headers()
