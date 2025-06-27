@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 """
-Lists all states from the database hbtn_0e_0_usa.
+Script to connect a database and list all states
 """
 import MySQLdb
 import sys
 
+"""
+Lists all states from the database hbtn_0e_0_usa.
+"""
 if __name__ == "__main__":
     conn = MySQLdb.connect(
         host="localhost",
