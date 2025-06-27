@@ -1,10 +1,12 @@
 #!/usr/bin/python3
 """
-Lists all states with a name starting with 'N'.
+This script prints states starting with 'N' from the database.
 """
 import MySQLdb
 import sys
 
+# Takes 3 arguments: username, password, database name
+# Prints states where name starts with 'N'
 if __name__ == "__main__":
     conn = MySQLdb.connect(
         host="localhost",
