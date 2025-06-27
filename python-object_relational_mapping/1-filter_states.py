@@ -5,8 +5,10 @@ This script prints states starting with 'N' from the database.
 import MySQLdb
 import sys
 
-"""Takes 3 arguments: username, password, database name
-Prints states where name starts with 'N'"""
+"""
+Takes 3 arguments: username, password, database name
+Prints states where name starts with 'N'
+"""
 
 if __name__ == "__main__":
     conn = MySQLdb.connect(
