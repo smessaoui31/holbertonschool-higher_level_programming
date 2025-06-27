@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 """
-This script prints states starting with 'N' from the database.
+This script prints states with a name equal to the argument (unsafe).
 """
 import MySQLdb
 import sys
 
-"""Takes 3 arguments: username, password, database name
-Prints states where name starts with 'N'"""
-
+"""
+Takes 4 arguments: username, password, database name, state name
+"""
 if __name__ == "__main__":
     conn = MySQLdb.connect(
         host="localhost",
@@ -17,7 +17,9 @@ if __name__ == "__main__":
         db=sys.argv[3]
     )
     cur = conn.cursor()
-    cur.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id ASC")
+    query = "SELECT * FROM states WHERE name =" \
+            " '{}' ORDER BY id ASC".format(sys.argv[4])
+    cur.execute(query)
     rows = cur.fetchall()
     for row in rows:
         print(row)
