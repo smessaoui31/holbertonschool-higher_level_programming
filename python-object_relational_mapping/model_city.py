@@ -5,7 +5,9 @@ This module defines the City class to map to the table 'cities'.
 from sqlalchemy import Column, Integer, String, ForeignKey
 from model_state import Base
 
-# City class inherits from Base and links to states
+"""
+City class inherits from Base and links to states
+"""
 class City(Base):
     """
     City class with id, name, and state_id columns.
