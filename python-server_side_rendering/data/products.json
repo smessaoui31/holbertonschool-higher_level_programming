@@ -1,3 +1,7 @@
 {
-  "products": ["Jarvis", "Ultron", "Vision"]
+  "products": [
+    { "name": "Jarvis", "category": "AI", "price": 0 },
+    { "name": "Ultron", "category": "Robot", "price": 1000000 },
+    { "name": "Vision", "category": "Android", "price": 500000 }
+  ]
 }
