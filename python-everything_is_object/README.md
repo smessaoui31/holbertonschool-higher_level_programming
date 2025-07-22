@@ -1,4 +1,4 @@
-![Python Memory and Object Identity](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*ncy1CS4YXZFYZu_YCoUN8g.png)
+![Python Memory and Object Identity](https://1000logos.net/wp-content/uploads/2020/08/Python-Logo.png)
 
 # Everything is Object in Python 🧠🐍
 
